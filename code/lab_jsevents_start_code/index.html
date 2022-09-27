@@ -8,11 +8,18 @@
     <title>ToDo List</title>
 </head>
 <body>
+
     <div class="container">
 
         <div class="header">
             <h1>ToDo List</h1>
         </div>
+
+        <button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Show Date</button>
+
+<p id="demo"></p>
 
         <form action="">
             <input type="text" placeholder="Add a new item" id="new-todo">
@@ -23,6 +30,10 @@
             <!-- items on ToDo list go here! -->
         </ul>
 
+        <h2>Completed List</h2>
+        <ul id="completedItem">
+
+        </ul>
     </div>
     
 </body>
